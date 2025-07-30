@@ -4,13 +4,14 @@ import UseState from './Hooks/useState'
 import UseRef from './Hooks/useRef'
 import UseImperativeHandle from './Hooks/useImperativeHandle'
 import Portal from './Hooks/portal'
-import MyContext from './store/context'
-import ComUsingState from './store/ComUsingState'
+import MyContext from './Context/context'
+import ComUsingState from './Context/ComUsingState'
 import UseReducer from './Hooks/useReducer'
 import UseEffect from './Hooks/useEffect'
 import ParentMemo from './optimizationMethods/ParentMemo'
 import UseMemo from './Hooks/useMemo'
 import UseCallback from './Hooks/useCallback'
+import ParentContextCompoent from './Redux/parentComponent'
 
 function App() {
 
@@ -110,6 +111,11 @@ function App() {
         placeholder="Type something"
       />
       <p>Count: {count}</p>
+      <hr></hr>
+
+      {/* Redux */}
+      <h2>Redux</h2>
+      <ParentContextCompoent />
       <hr></hr>
       
     </MyContext>
