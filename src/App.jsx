@@ -12,6 +12,8 @@ import ParentMemo from './optimizationMethods/ParentMemo'
 import UseMemo from './Hooks/useMemo'
 import UseCallback from './Hooks/useCallback'
 import ParentContextCompoent from './Redux/parentComponent'
+import ParentComp from './ReduxToolkit/parentComp'
+import Root from './Router/root'
 
 function App() {
 
@@ -117,6 +119,12 @@ function App() {
       <h2>Redux</h2>
       <ParentContextCompoent />
       <hr></hr>
+
+      {/* Redux toolkit */}
+      <h2>Redux toolkit</h2>
+      <ParentComp />
+      <hr></hr>
+
       
     </MyContext>
   )
