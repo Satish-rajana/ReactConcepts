@@ -16,7 +16,6 @@ const ParentComp = () => {
                 unique name CounterSlice to get hold of the current state : <b>useSelector(state ={">"} state.CounterSlice.counter)</b></li>
             <li>To dispatch an action from child component, we need to import useDispath function to sbscribe to the store</li>
             <li>Import the counterSlice.actions from the counterSlice and pass the action which need to be performed by the button</li>
-            <li></li>
         </ol>
         <Provider store={toolKitStore}>
             <ChildCom />
